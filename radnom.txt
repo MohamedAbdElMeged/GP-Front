@@ -1,0 +1,388 @@
+
+    <!--Start Slider-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img id="carouselImage" class="d-block w-100" src="images/slider-2.jpg" style="width: 100%; " alt="First slide">
+                <div class="centered">
+                    <h2 id="carouselCaption"><strong>Booking a Doctor </strong> is now easy with us !</h2>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/slider-3.jpg" style="width: 100%; " alt="Second slide">
+                <div class="centered">
+                    <h2 id="carouselCaption"><strong>Booking a Doctor </strong> is now easy with us !</h2>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--End SLider-->
+    <!-- Four colored Divs Start-->
+    <div class="relative homepage-search ">
+        <div class="homepage-search__wrapper">
+            <h2 class="homepage-search__heading">Search for a doctor by specialty, name or condition</h2>
+
+
+            <form class="homepage-search__form" action="/search-results" method="get">
+                <svg aria-hidden="true" class="icon -xl" role="img">
+            <use xlink:href="#search"></use>
+        </svg>
+                <input aria-label="Enter a doctor, specialty, or condition" class="homepage-search__input" aria-labelledby="Enter a doctor, specialty, or condition" id="query" name="search" type="text" placeholder="Enter a doctor, specialty, or condition" autocomplete="off"
+                    spellcheck="false" dir="auto">
+                <button id="submit" type="submit" class="homepage-search__button btn btn--arrow" aria-label="Search">
+            <svg aria-hidden="true" class="icon " role="img">
+                <use xlink:href="#arrow-right"></use>
+            </svg>
+        </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tile__wrapper ">
+        <div class="tile " style="background-color: #0091bd">
+            <div class="tile__content">
+                <div class="tile__subtitle">
+                    Book Online
+                </div>
+                <div class="tile__title">
+                    <div class="tile__icon" style="background-image: url('/-/media/mercy/calendar.ashx')"></div>
+                    Schedule an Appointment Today
+                </div>
+                <div class="tile__buttons">
+                    <a class="btn btn--tertiary" onmouseover="this.style.color = '#0091bd'" onmouseout="this.style.color = '#ffffff'" onfocus="this.style.color = '#0091bd'" onblur="this.style.color = '#ffffff'" href="https://www.mercy.com/find-a-doctor?displayValue=primary%20care&amp;filters=filter%3Ddirect_book_capable%3AT&amp;page=1&amp;shuffle_seed=dba59c35-2aa4-4a43-af39-3c75804d15d6&amp;sort=networks%2Crelevance&amp;unified=primary%20care">
+                                Book An Appointment
+                            </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="tile " style="background-color: #a52e58">
+            <div class="tile__content">
+                <div class="tile__subtitle">
+                    Locations
+                </div>
+                <div class="tile__title">
+                    <div class="tile__icon" style="background-image: url('/-/media/mercy/pin.ashx')"></div>
+                    Find Health Care Near You
+                </div>
+                <div class="tile__buttons">
+                    <a class="btn btn--tertiary" onmouseover="this.style.color = '#a52e58'" onmouseout="this.style.color = '#ffffff'" onfocus="this.style.color = '#a52e58'" onblur="this.style.color = '#ffffff'" href="/location-map">
+                                Find Location
+                            </a>
+
+                    <a class="btn btn--tertiary" onmouseover="this.style.color = '#a52e58'" onmouseout="this.style.color = '#ffffff'" onfocus="this.style.color = '#a52e58'" onblur="this.style.color = '#ffffff'" href="/find-a-doctor">
+                                Find A Doctor
+                            </a>
+                </div>
+            </div>
+        </div>
+        <div class="tile  " style="background-color: #C78500">
+            <div class="tile__content">
+                <div class="tile__subtitle">
+                    My Chart
+                </div>
+                <div class="tile__title">
+                    <div class="tile__icon" style="background-image: url('/-/media/mercy/mychart.ashx')"></div>
+                    Manage Your Health Information Online
+                </div>
+                <div class="tile__buttons">
+                    <a class="btn btn--tertiary" onmouseover="this.style.color = '#C78500'" onmouseout="this.style.color = '#ffffff'" onfocus="this.style.color = '#C78500'" onblur="this.style.color = '#ffffff'" href="https://chpepiceweb.health-partners.org/mychart/">
+                                Login
+                            </a>
+
+                    <a class="btn btn--tertiary" onmouseover="this.style.color = '#C78500'" onmouseout="this.style.color = '#ffffff'" onfocus="this.style.color = '#C78500'" onblur="this.style.color = '#ffffff'" href="https://chpepiceweb.health-partners.org/mychart/signup">
+                                Sign Up
+                            </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Four colored Divs End-->
+
+
+
+
+
+
+    
+@media (min-width: 928px) {
+    .tile__wrapper {
+        display: flex
+    }
+}
+
+.tile {
+    position: relative;
+    min-height: 205px;
+    display: flex;
+    align-items: center
+}
+
+@media (min-width: 928px) {
+    .tile {
+        flex-grow: 1;
+        flex-basis: 0
+    }
+}
+
+.tile__image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: 50% no-repeat;
+    background-size: cover;
+    opacity: .1
+}
+
+.tile__content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    padding: 35px 20px;
+    width: 100%
+}
+
+@media (min-width: 928px) {
+    .tile__content {
+        padding: 105px 20px 80px
+    }
+}
+
+@media (min-width: 1280px) {
+    .tile__content {
+        padding: 105px 40px 80px
+    }
+}
+
+@media (min-width: 928px) {
+    .-no-icon .tile__content {
+        padding-left: 65px;
+        padding-right: 65px
+    }
+}
+
+@media (min-width: 1280px) {
+    .-no-icon .tile__content {
+        padding-left: 85px;
+        padding-right: 85px
+    }
+}
+
+.tile__subtitle {
+    font-family: Gotham SSm A, Gotham SSm B, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding-left: 65px;
+    margin-bottom: 5px
+}
+
+@media (min-width: 928px) {
+    .tile__subtitle {
+        font-size: 14px;
+        letter-spacing: 2.8px
+    }
+    .-no-icon .tile__subtitle {
+        padding-left: 0
+    }
+}
+
+.tile__title {
+    font-family: Gotham SSm A, Gotham SSm B, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -.6px;
+    line-height: 26px;
+    display: flex;
+    align-items: center
+}
+
+@media (min-width: 928px) {
+    .tile__title {
+        font-size: 30px;
+        line-height: 32px;
+        word-break: break-word
+    }
+}
+
+.-no-icon .tile__title {
+    padding-left: 63px
+}
+
+@media (min-width: 928px) {
+    .-no-icon .tile__title {
+        position: relative;
+        left: -2px;
+        padding-left: 0
+    }
+}
+
+.tile__icon {
+    width: 50px;
+    height: 50px;
+    background: 50% no-repeat;
+    background-size: contain;
+    margin-right: 13px;
+    flex-shrink: 0
+}
+
+.tile__buttons {
+    padding-left: 65px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.tile__buttons .btn {
+    margin-top: 15px;
+    margin-right: 15px;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+@media (min-width: 928px) {
+    .-no-icon .tile__buttons {
+        padding-left: 0
+    }
+    .tile__buttons .btn {
+        white-space: normal
+    }
+    .tile__buttons .btn+.btn {
+        margin-left: 0
+    }
+}
+
+@media (min-width: 928px) {
+    .homepage-search {
+        position: relative;
+        margin: 0 auto;
+        padding: 0 60px;
+        max-width: 100rem
+    }
+}
+
+.homepage-search__wrapper {
+    color: #fff;
+    background-color: #009f45;
+    width: 100%;
+    position: relative;
+    padding: 2rem 1.5rem
+}
+
+@media (min-width: 928px) {
+    .homepage-search__wrapper {
+        position: absolute;
+        z-index: 3;
+        width: calc(100% - 120px);
+        top: -110px;
+        padding: 50px 60px
+    }
+}
+
+.homepage-search__heading {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: .875rem;
+    padding-bottom: 1rem
+}
+
+.homepage-search__heading:first-child {
+    margin: 0
+}
+
+.fonts-loaded .homepage-search__heading {
+    font-family: Gotham SSm A, Gotham SSm B, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0
+}
+
+.homepage-search__form {
+    display: flex;
+    align-items: center
+}
+
+.homepage-search__form>.icon {
+    display: none
+}
+
+@media (min-width: 928px) {
+    .homepage-search__form>.icon {
+        display: block;
+        margin-right: 20px
+    }
+}
+
+.homepage-search__input {
+    font-family: Gotham SSm A, Gotham SSm B, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: -.3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, .25);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0 1rem;
+    height: 42px;
+    width: 100%
+}
+
+.homepage-search__input:-ms-input-placeholder {
+    color: hsla(0, 0%, 100%, .8)
+}
+
+.homepage-search__input::placeholder {
+    color: hsla(0, 0%, 100%, .8)
+}
+
+.homepage-search__input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none
+}
+
+@media (min-width: 928px) {
+    .homepage-search__input {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -.6px;
+        height: 60px
+    }
+}
+
+.homepage-search__button {
+    background-color: transparent;
+    color: #fff;
+    flex-shrink: 0;
+    margin-left: 10px
+}
+
+.homepage-search__button:focus,
+.homepage-search__button:hover {
+    color: #009f45
+}
+
+@media (min-width: 928px) {
+    .homepage-search__button {
+        margin-left: 20px
+    }
+}
