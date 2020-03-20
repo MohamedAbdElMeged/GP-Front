@@ -10,51 +10,69 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+<style>
+    .fixed-top-2 {
+        margin-top: 56px;
+    }
 
+    .sticky-top {
+        padding-top: 56px;
+    }
+    #fontcolor {
+        color: #e1395f;     
+     }
+    
+</style>
 </head>
 
-<body>
+<body class="bg-light">
 
-
-
-    <!-- Start Navbar-->
-
-
-    <nav class="navbar navbar-expand-lg navbar-light ">
+<!-- Start Navbars-->
+    <nav class="navbar navbar-expand-lg   fixed-top" style="background-color:#5774ba; color:#d0ced0;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse  ">
             <ul class=" navbar-nav ">
                 <li class=" nav-item " id="navButton">
-                    <a class="nav-link  " href="# ">Drug Checker</a>
+                    <a class="nav-link  active" href="# " style="color:#d0ced0"><i class="fas fa-capsules" style="font-size:24px;"></i> Drug Checker</a>
                 </li>
                 <li class="nav-item" id="navButton">
-                    <a class="nav-link  " href="# ">Drug Tips</a>
+                    <a class="nav-link  " href="# " style="color:#d0ced0"><i class="fas fa-clinic-medical" style="font-size:24px;"></i> Drug Tips</a>
                 </li>
                 <li class="nav-item" id="navButton">
-                    <a class="nav-link  " href="# ">Notification</a>
+                    <a class="nav-link  " href="# " style="color:#d0ced0"><i class="far fa-bell"style="font-size:24px;"></i> Notification</a>
                 </li>
                 <li class="nav-item " id="navButton">
-                    <a class="nav-link" href="# ">Profile</a>
+                    <a class="nav-link" href="# " style="color:#d0ced0"><i class="fas fa-mask"style="font-size:24px;"></i> <i class="fas fa-user-md"style="font-size:24px;"></i> Profile</a>
                 </li>
-
-
             </ul>
         </div>
         <form class="form-inline my-2 my-lg-0 pull-right">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-secondary my-2 my-sm-0 btn-lg" type="submit" style="color:#d0ced0"><i class="fas fa-search"></i> Search</button>
         </form>
     </nav>
+ <!-- start NavBar 2 note that sticky-top has a specific css on style tag there up on line 18-->
+    <div class="sticky-top " style="background-color:#39559e; ">
+        <nav class="nav navbar-collapse">
+            <a class="nav-link active" href="#" style="color:#d0ced0">Tyodro</a>
+            <a class="nav-link" href="#" style="color:#d0ced0">
+                 Health tips <i class="fas fa-hand-holding-heart"style="color:#e1395f;"></i>
+              <span class="badge badge-pill bg-light align-text-bottom">27</span>
+            </a>
+            <a class="nav-link" href="#" style="color:#d0ced0"><i class="fas fa-paper-plane"style="color:#e1395f;"></i> Navigation</a>
+            <a class="nav-link" href="#" style="color:#d0ced0"><i class="fab fa-black-tie"style="color:#e1395f;"></i> Up To Premium</a>
+            <a class="nav-link" href="#" style="color:#d0ced0"><i class="fas fa-ambulance"style="color:#e1395f;"></i> Emergencies</a>
+           
+        </nav>
+    </div>
 
-
-    <!-- End NavBar-->
-
+    <!-- End NavBars-->
     <!--OPEN UP start-->
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleControls" data-slide-to="1"></li>
@@ -67,7 +85,7 @@
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/slider-1.jpg">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2>Drug Checker</h2>
+                    <h2 >Drug Checker</h2>
                     <p>sdvsgrerere</p>
                 </div>
             </div>
@@ -81,8 +99,8 @@
             <div class="carousel-item">
                 <img class="d-block w-100" src="images/slider-3.jpg">
                 <div class="carousel-caption d-none d-md-block">
-                    <h2>Navigation</h2>
-                    <p>sdvsgrerere</p>
+                    <h2 style="color:#e1395f">Navigation</h2>
+                    <p >sdvsgrerere</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -114,8 +132,33 @@
     <br>
     <br>
     <div class="container services">
-        <h2>Our Services</h2>
-        <h5>lorem ipsum mego msacsa asqwkm nskanvkv asnvksavn</h5>
+        <h2 style="color:#39559e">Our Services</h2>
+        <div class="row">
+            <div class="col-6">
+               <ol>
+               <li>It can relate their pathological record/EHR with their new diagnoses to arise and summon the suitable solutions and drug suggestions for their new pathological case.</li>
+               <li>It has a medical community allowing them to follow medical news and providing them with good tips from real doctors in all disciplines.</li>
+               <li>All doctors have official certificates to validate the information published by them.</li>
+               <li>There is a keen monitoring and reporting procedure for all doctors in case of wrong behaviour.</li>
+               <li>In cases of emergency, you can easily find the nearest hospital or pharmacy.</li>
+               </ol>
+
+            </div>
+            <div class="col-6">
+                <ol>
+                    <li>You can search for specific medicine, blogs, cosmetics or medical equipment in all disciplines.</li>
+                    <li>You can make a family account for health tips and advanced loyalty programs.</li>
+                    <li>You can make online consultation with doctors through secure chatting.</li>
+                    <li>You can pay for premium packages for several consultations for a specific period of time.</li>
+                    <li>You can get discounts for supplying from many sectors and for visits for doctors.</li>
+
+
+                </ol>
+
+            </div>    
+                   
+        </div>
+
     </div>
 
     <br>
@@ -153,7 +196,7 @@
 
     <div class="container services">
 
-        <h2>Why should I upgrade to <strong>PREMIUM</strong></h2>
+        <h2 style="color:#39559e">Why should I upgrade to <strong>PREMIUM</strong></h2>
 
         <h5>lorem ipsum mego msacsa asqwkm nskanvkv asnvksavn</h5>
     </div>
@@ -189,9 +232,12 @@
 
     <div class="container services">
 
-        <h2>Why <strong>Tyodro!</strong></h2>
+        <h2 style="color:#39559e">Why <strong>Tyodro!</strong></h2>
 
-        <h5>lorem ipsum mego msacsa asqwkm nskanvkv asnvksavn</h5>
+        <h5>
+            Tyodro is dedicated to increasing the value of pharmaceutical and medical industries participants, and operates in the three complementary fields of Strategy, Management and Organization.
+            Its in-depth understanding of the pharmaceutical and medical environments, complemented by rigorous analyses, allows it to deliver practical recommendations and robust fact-based solutions to create value for users with high response.
+        </h5>
     </div>
     <br>
     <br>
@@ -223,30 +269,28 @@
     <br>
 
 
-    <div class="container-fluid footer-home">
+    <div class="container-fluid footer-home" style="background-color:#5774ba; color:#d0ced0;">
         <div class="row">
 
-            <div class="col-3">
+            <div class="col-2">
                 <a class="navbar-brand" href="index.html">
                     <img src="images/tyodro-logo.png" width="120" height="45" class="d-inline-block align-top" alt="">
                 </a>
 
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <ul>
-                    <li>FBFD FBDF DFB</li>
-                    <li>FBFD FBDF DFB</li>
-                    <li>FBFD FBDF DFB</li>
-                    <li>FBFD FBDF DFB</li>
+                    <li><a class="nav-link active" href="#" style="color:#d0ced0">fAQ</a></li>
+
 
 
 
                 </ul>
 
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <ol>
-                    <li>FBFD FBDF DFB</li>
+                    <li>Contact Us</li>
                     <li>FBFD FBDF DFB</li>
                     <li>FBFD FBDF DFB</li>
                     <li>FBFD FBDF DFB</li>
@@ -256,9 +300,21 @@
                 </ol>
 
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <ol>
+                    <li>About Us</li>
                     <li>FBFD FBDF DFB</li>
+                    <li>FBFD FBDF DFB</li>
+                    <li>FBFD FBDF DFB</li>
+
+
+
+                </ol>
+
+            </div>
+            <div class="col-2">
+                <ol>
+                    <li>Copy Rights</li>
                     <li>FBFD FBDF DFB</li>
                     <li>FBFD FBDF DFB</li>
                     <li>FBFD FBDF DFB</li>
